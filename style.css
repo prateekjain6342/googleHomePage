@@ -153,28 +153,6 @@ div.searchBox:focus {
     outline: none;
 }
 
-@media (max-width: 630px) {
-    div.search-box {
-        display: flex;
-        flex-direction: row;
-        width: 100px;
-        height: 46px;
-        margin-bottom: 100%;
-        align-self: flex-start;
-        margin-right: 100%;
-    }
-    
-    div.searchBox {
-        display: flex;
-        flex-direction: row;    
-        width: 400px;
-        height: 46px;
-        border-radius: 25px;
-        border: thin solid rgb(228, 228, 228);
-        align-self: flex-start;
-        margin-left: -140%;
-    }
-}
 
 div.search-icon {
     display: flex;
