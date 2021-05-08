@@ -277,3 +277,51 @@ div.input-text {
 .searchButton2:focus {
     border: 1px solid #4185f3;
 }
+
+.footer-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #dadce0;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 46px;
+}
+
+@media (max-width: 691px) {
+    .footer-bar {
+        height: 92px;
+    }
+}
+
+.left-section-footer {
+    order: 1;
+    align-self: flex-start;
+    float: left;
+}
+
+.right-section-footer {
+    order: 2;
+    align-self: flex-end;
+    float: right;
+}
+
+
+ul.footer-items > li {
+    display: inline;
+    margin-right: 25px;
+    font-size: 14px;
+}
+
+ul.footer-items > li > a {
+    color: #848484;
+    text-decoration: none;
+}
+ul.footer-items > li > a:hover {
+    text-decoration: underline;
+}
