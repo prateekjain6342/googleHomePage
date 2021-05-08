@@ -127,20 +127,21 @@ form.searchForm {
 
 div.search-box {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 584px;
     height: 46px;
-    margin-bottom: 10%;
-    align-self: center;
+    margin-bottom: 5%;
+    align-items: center;
 }
 
 div.searchBox {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 584px;
     height: 46px;
     border-radius: 25px;
     border: thin solid rgb(228, 228, 228);
+    align-items: center;
 }
 
 div.searchBox:hover {
@@ -155,7 +156,7 @@ div.searchBox:focus {
 @media (max-width: 630px) {
     div.search-box {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         width: 100px;
         height: 46px;
         margin-bottom: 100%;
@@ -165,7 +166,7 @@ div.searchBox:focus {
     
     div.searchBox {
         display: flex;
-        flex-direction: column;    
+        flex-direction: row;    
         width: 400px;
         height: 46px;
         border-radius: 25px;
@@ -181,6 +182,7 @@ div.search-icon {
     width: 33px;
     height: 44px;
     margin-left: 2%;
+    order: 1;
 }
 
 .searchIcon {
@@ -189,7 +191,6 @@ div.search-icon {
     align-self: center;
     margin-left: 10%;
     fill: #99a0a5;
-    margin-top: 38%;
 }
 
 div.voice-command {
@@ -198,7 +199,7 @@ div.voice-command {
     width: 33px;
     height: 44px;
     margin-left: 2%;
-    
+    order: 3;
 }
 
 .voiceCommand {
@@ -207,5 +208,72 @@ div.voice-command {
     align-self: center;
     margin-right: 10%;
     fill: #99a0a5;
-    margin-top: -110%;
+    margin-top: -15%;
+    
+}
+
+div.input-text {
+    display: flex;
+    align-self: center;
+    width: 487px;
+    height: 46px;
+    order: 2;
+}
+
+.inputText {
+    max-width: 487px;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-family: arial;
+}
+
+.search-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 584px;
+    height: 58px;
+}
+
+.searchButton1 {
+    display: flex;
+    order: 1;
+    align-self: flex-start;
+    justify-content: center;
+    height: 36px;
+    width: 127px;
+    border-radius: 4px;
+    background-color: #f7f9fb;
+    border: none;
+    margin: 7px;
+}
+
+.searchButton1:hover {
+    border: 1px solid lightgray;
+}
+
+.searchButton1:focus {
+    border: 1px solid #4185f3;
+}
+
+.searchButton2 {
+    display: flex;
+    order: 2;
+    align-self: flex-start;
+    justify-content: center;
+    height: 36px;
+    width: 127px;
+    border-radius: 4px;
+    background-color: #f7f9fb;
+    border: none;
+    margin: 7px;
+}
+
+.searchButton2:hover {
+    border: 1px solid lightgray;
+}
+
+.searchButton2:focus {
+    border: 1px solid #4185f3;
 }
